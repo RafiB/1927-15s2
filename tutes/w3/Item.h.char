@@ -1,0 +1,19 @@
+// Item.h - Character Items for use in GADTs
+
+#ifndef ITEM_H
+#define ITEM_H
+
+#include 
+
+typedef char Item;
+
+#define ItemCopy(x) (x)
+#define ItemEQ(x,y) ((x) == (y))
+#define ItemLT(x,y) ((x) < (y))
+#define ItemLE(x,y) ((x) <= (y))
+#define ItemGT(x,y) ((x) > (y))
+#define ItemGE(x,y) ((x) >= (y))
+#define ItemScan(x) atoi((x)) // ???
+#define ItemShow(f,x) fprintf((f),"%c",(x))
+
+#endif ITEM_H

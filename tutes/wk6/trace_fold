@@ -1,0 +1,7 @@
+fold([2,3,4], mult, 1);                         // 24
+    mult(2, fold([3,4], mult, 1));              // 24
+        fold([3,4], mult, 1);                   // 12
+            mult(3, fold([4], mult, 1));        // 12
+                fold([4], mult, 1);             // 4
+                    mult(4, fold([], mult, 1)); // 4
+                        fold([], mult, 1));     // 1

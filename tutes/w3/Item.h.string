@@ -1,0 +1,19 @@
+// Item.h - Integer Items for use in GADTs
+
+#ifndef ITEM_H
+#define ITEM_H
+
+#include 
+
+typedef int Item;
+
+#define ItemCopy(x) (strdup(x))
+#define ItemEQ(x,y) (strcmp(x, y) == 0)
+#define ItemLT(x,y) (strcmp(x, y) < 0)
+#define ItemLE(x,y) (strcmp(x, y) <= 0)
+#define ItemGT(x,y) (strcmp(x, y) > 0)
+#define ItemGE(x,y) (strcmp(x, y) >= 0)
+#define ItemScan(x) atoi((x)) // ???
+#define ItemShow(f,x) fprintf((f),"%s",(x))
+
+#endif ITEM_H

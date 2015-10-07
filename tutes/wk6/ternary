@@ -1,0 +1,12 @@
+int x = a ? b : c;
+
+int x;
+if (a) x = b;
+else x = c;
+
+====================
+
+return a ? b : c;
+
+if (a) return b;
+else return c;
